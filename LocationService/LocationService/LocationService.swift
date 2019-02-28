@@ -15,7 +15,7 @@ open class LocationService: NSObject, CLLocationManagerDelegate {
     public let didReceiveLocation = PublishSubject<CLLocation>()
     private var locationManager = CLLocationManager()
     
-    override init() {
+    public override init() {
         super.init()
         setup()
     }
